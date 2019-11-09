@@ -4,8 +4,13 @@ body{
   padding: 0;
 }
 
+ul{
+  
+  display: flex;
+  
+}
 /* grid container - parent  */
-.grid-containr {
+.grid{
   display: grid;
   grid-template-rows: 183px 1fr 103px;
   grid-template-areas: 
@@ -16,7 +21,7 @@ body{
 }
 
 /* flex container  */
-.header-container {
+.header{
   grid-area: header;
   background-color: #2f2d2b;
   color: white;
@@ -26,7 +31,7 @@ body{
   padding: 0 16px;  
 }
 
-.main-container {
+.main {
   grid-area: main;
   background-color: #ff4081;
   color: white;;
@@ -37,7 +42,7 @@ body{
 .main-cards{}
 
 /* flex container  */
-.footer-container {
+.footer {
   grid-area: footer;
   background-color: #2f2d2b;
   color: white;

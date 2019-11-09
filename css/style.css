@@ -1,0 +1,51 @@
+/* page setup */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* grid container - parent  */
+.grid-containr {
+  display: grid;
+  grid-template-rows: 183px 1fr 103px;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  height: 100vh;
+}
+
+/* flex container  */
+.header-container {
+  grid-area: header;
+  background-color: #2f2d2b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;  
+}
+
+.main-container {
+  grid-area: main;
+  background-color: #ff4081;
+  color: white;;
+}
+
+.main-hero{}
+.main-features{}
+.main-cards{}
+
+/* flex container  */
+.footer-container {
+  grid-area: footer;
+  background-color: #2f2d2b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;  
+}
+
+.footer-menu{}
+.footer-social{}

@@ -4,15 +4,10 @@ body{
   padding: 0;
 }
 
-ul{
-  
-  display: flex;
-  
-}
 /* grid container - parent  */
 .grid{
   display: grid;
-  grid-template-rows: 183px 1fr 103px;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
   "header"
   "main"
@@ -23,34 +18,115 @@ ul{
 /* flex container  */
 .header{
   grid-area: header;
-  background-color: #2f2d2b;
-  color: white;
+  background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;  
+  justify-content: space-between; 
+  padding:5px 15px ; 
+  margin: 5px 15px;
 }
+
+
 
 .main {
   grid-area: main;
-  background-color: #ff4081;
-  color: white;;
+  grid-template-rows:  1fr 1fr 1fr;
 }
 
-.main-hero{}
-.main-features{}
-.main-cards{}
+
+.hero{
+  display: flex;
+  height: 760px;;
+  width: 100vw;
+  background:url("../img/hero-bg.png") no-repeat center; 
+  background-size: cover; 
+}
 
 /* flex container  */
 .footer {
   grid-area: footer;
-  background-color: #2f2d2b;
-  color: white;
+  background-color: #d2d7db;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;  
 }
 
-.footer-menu{}
-.footer-social{}
+/* reusable elements */
+/* nav block */
+
+.header__navbar{
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.navbar{
+  list-style-type: none;
+  display: none;
+  
+}
+
+.navbar li{
+  text-align: center;
+  margin-top: 10px auto;
+}
+
+.navbar__link {
+ text-decoration: none;
+ color: #23254f;
+}
+
+.header__logo{
+  margin-top: 10px;
+height: 10vh;
+display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle{
+  position: Absolute ;
+  top: 50px;
+  right: 20px;
+  cursor: pointer;
+  color: #23254f;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+/* desktop layout */
+@media screen and (min-width: 768px) {
+  .header__navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+  .navbar--primary {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+  .navbar--primary li {
+      margin: 0;
+  }
+  .navbar__link {
+      margin-left: 10px;
+  }
+  .header__logo {
+      margin-top: 0;
+      width: 298px;
+height: 80px;
+  }
+ .navbar-toggle {
+     display: none;
+  }
+  
+  .navbar__link:hover {
+      color: #d9082a;
+  }

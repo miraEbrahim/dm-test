@@ -6,10 +6,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FE Test </title>
+    <title>The Thoroughbred Breeders Association</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/heading.css">
+    <!-- Our project just needs Font Awesome Solid + Brands -->
+    <link href="css/vendor/fontawesome.css" rel="stylesheet">
+    <link href="css/vendor/brands.css" rel="stylesheet">
+    <link href="css/vendor/solid.css" rel="stylesheet">
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -20,19 +25,26 @@
       <!-- 'header' block   -->
       <header class="header">
         <!-- 'logo' element in the 'header' block -->
-        <div class="header__logo">
-          <img class="img-responsive" src="/img/icons/logo.png" alt="the thoroughbred breeders Association’s logo">
-        </div><!-- end of 'logo' element -->
+        <!-- <div class="header__logo">
+          <img src="/img/icons/logo.png" alt="the thoroughbred breeders Association’s logo">
+        </div> -->
         <!-- 'nav' block -->
-        <nav class="nav" aria-label="Primary">
-            <ul class="nav__list--primary">
-              <li class="nav__list__item"><a href="#">Primary link</a></li>
-              <li class="nav__list__item"><a href="#">Primary link</a></li>
-              <li class="nav__list__item"><a href="#">Primary link</a></li>
-              <li class="nav__list__item"><a href="#">Primary link</a></li>
-              <li class="nav__list__item"><a href="#">Primary link</a></li>
-              <li class="nav__list__item"><a href="#">Primary link</a></li>
-              <li class="nav__list__item"><a href="#">Primary link</a></li>
+        <nav class="header__navbar" aria-label="Primary">
+            <div class="header__logo">
+                <img src="/img/icons/logo.png" alt="the thoroughbred breeders Association’s logo">
+              </div>
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+         
+            <ul class="navbar" id="js-nav">
+              <li><a class=" navbar__link" href="#">link</a></li>
+              <li><a class=" navbar__link" href="#">link</a></li>
+              <li><a class=" navbar__link" href="#">link</a></li>
+              <li><a class=" navbar__link" href="#">link</a></li>
+              <li><a class=" navbar__link" href="#">link</a></li>
+              <li><a class=" navbar__link" href="#">link</a></li>
+              <li><a class=" navbar__link" href="#">link</a></li>
             </ul>
         </nav> <!-- end of 'nav' block -->
       </header> <!-- end of 'header' block -->
@@ -47,10 +59,10 @@
               Main Heading
             </h1>
              <!-- 'text' block and 'secondary' variation in 'text' block -->
-            <p class="text text-secondary">Main Tex</p>
+            <p class="text text--secondary">Main Tex</p>
           </div>
           <!-- 'img' element in 'hero' block  -->
-          <img class="hero__img" src="/img/hero-image.png" alt="brown horse">
+          <!-- <img class="hero__img" src="/img/hero-image.png" alt="brown horse"> -->
         </div><!-- end of hero container -->
         <!-- 'features' block -->
         <div class="features">
@@ -59,13 +71,13 @@
             <!-- 'heading' block and 'fa' element of 'heading' block and 'primary' variation in 'heading__fa' block element -->
             <h2 class="heading heading__fa heading__fa--primary"> fa </h2>
             <!-- 'heading' block and 'primary' variation in 'heading' block -->
-            <h2 class="heading headin-primary">heading primary</h2>
+            <h2 class="heading heading--primary">heading primary</h2>
             <!-- 'text' block and 'primary' variation in 'text' block -->
-            <p class="text text-primary">primary text</p>
+            <p class="text text--primary">primary text</p>
             <!-- 'link' block and 'and 'primary' variation of 'link' block  -->
-            <a class="link link-primary"> primary link
+            <a class="link link--primary"> primary link
                 <!-- 'link' block and 'fa' element of 'link' block and 'primary' variation in 'link__fa' block element -->
-              <span class="link link__fa link__fa--primary">fa link primary    </span>
+              <span class="link link__fa link__fa--primary">fa link primary</span>
             </a>
           </div>
            <!-- 'column' #2 elememet in 'features' block -->
@@ -73,11 +85,11 @@
             <!-- 'heading' block and 'fa' element of 'heading' block and 'primary' variation in 'heading__fa' block element -->
             <h2 class="heading heading__fa heading__fa--primary"> fa </h2>
             <!-- 'heading' block and 'primary' variation in 'heading' block -->
-            <h2 class="heading headin-primary">heading primary</h2>
+            <h2 class="heading heading--primary">heading primary</h2>
             <!-- 'text' block and 'primary' variation in 'text' block -->
-            <p class="text text-primary">primary text</p>
+            <p class="text text--primary">primary text</p>
             <!-- 'link' block and 'and 'primary' variation of 'link' block  -->
-            <a class="link link-primary"> primary link
+            <a class="link link--primary"> primary link
                 <!-- 'link' block and 'fa' element of 'link' block and 'primary' variation in 'link__fa' block element --> -->
               <span class="link link__fa link__fa--primary">fa link primary    </span>
             </a>
@@ -87,11 +99,11 @@
               <!-- 'heading' block and 'fa' element of 'heading' block and 'primary' variation in 'heading__fa' block element -->
               <h2 class="heading heading__fa heading__fa--primary"> fa </h2>
               <!-- 'heading' block and 'primary' variation in 'heading' block -->
-              <h2 class="heading headin-primary">heading primary</h2>
+              <h2 class="heading heading--primary">heading primary</h2>
               <!-- 'text' block and 'primary' variation in 'text' block -->
-              <p class="text text-primary">primary text</p>
+              <p class="text text--primary">primary text</p>
               <!-- 'link' block and 'and 'primary' variation of 'link' block  -->
-              <a class="link link-primary"> primary link
+              <a class="link link--primary"> primary link
                   <!-- 'link' block and 'fa' element of 'link' block and 'primary' variation in 'link__fa' block element --> -->
                 <span class="link link__fa link__fa--primary">fa link primary    </span>
               </a>
@@ -102,8 +114,8 @@
             <h2 class="heading heading__fa heading__fa--secondary"> cards fa</h2>
             <h2 class="heading heading--secondary">cards heading</h2>
             <div>
-              <h4 class="heading heading-secondary heading--small">sub cards heading</h4>
-              <h4 class="heading heading-secondary heading--small">15th March 2019</h4>
+              <h4 class="heading heading--secondary heading--small">sub cards heading</h4>
+              <h4 class="heading heading--secondary heading--small">15th March 2019</h4>
               <p class="text text--secondary">cards text</p>
             </div>
             <a class="link link---secondary">card link
@@ -136,33 +148,34 @@
         </div><!-- end of cards container -->
         <div class="breed">
           <div role="img" class="breed__logos"  aria-label="a collection of Breed logos">
-              <img class="img-responsive" src="/img/breed/s-logo-bha.png" alt="BHA logo">
-              <img class="img-responsive" src="/img/breed/s-logo-bred.png" alt="the Thoroughbred club logo">
+              <img class="img--responsive" src="/img/breed/s-logo-bha.png" alt="BHA logo">
+              <img class="img--responsive" src="/img/breed/s-logo-bred.png" alt="the Thoroughbred club logo">
               <img class="img-responsive" src="/img/breed/s-logo-gbr.png" alt="GBR logo">
-              <img class="img-responsive" src="/img/breed/s-logo-horsemen.png" alt="the horsemen's group logo">
-              <img class="img-responsive" src="/img/breed/s-logo-plus.png" alt="plus+10 logo">
+              <img class="img--responsive" src="/img/breed/s-logo-horsemen.png" alt="the horsemen's group logo">
+              <img class="img--responsive" src="/img/breed/s-logo-plus.png" alt="plus+10 logo">
             </div>
         </div>
       </main><!-- end of main -->
       <footer class="footer">
         <!-- 'nav' block -->
         <nav class="nav" aria-label="Secondary">
-            <ul class="nav__list--secondary">
-              <li class="nav__list__item"><a href="#">link</a></li>
-              <li class="nav__list__item"><a href="#">link</a></li>
-              <li class="nav__list__item"><a href="#">link</a></li>
-              <li class="nav__list__item"><a href="#">link</a></li>
-              <li class="nav__list__item"><a href="#">link</a></li>
+            <ul class="nav-list--secondary">
+              <li class="nav-list__item"><a href="#">link</a></li>
+              <li class="nav-list__item"><a href="#">link</a></li>
+              <li class="nav-list__item"><a href="#">link</a></li>
+              <li class="nav-list__item"><a href="#">link</a></li>
+              <li class="nav-list__item"><a href="#">link</a></li>
             </ul>
         </nav> <!-- end of 'nav' block -->
         <ul class="footer__social">
-          <li class="link link__fa link__fa--social"><a href="#"><span>fa</span></a></li>
-          <li class="link link__fa link__fa--social"><a href="#"><span>fa</span></a></li>
-          <li class="link link__fa link__fa--social"><a href="#"><span>fa</span></a></li>
+            <li class="link"><a href="#"><i class="fab fa-lg fa--primary fa-github-square"></i> </a></li>
+            <li class="link"><a href="#"><i class="fab fa-lg fa--primary fa-github-square"></i> </a></li>
+          <li class="link"><a href="#"><i class="fab fa-lg fa--primary fa-github-square"></i> </a></li>
         </ul>
           
       </footer>
     </div><!--end of grid container  -->
+    <script src="js/vendor/jquery.js" async defer></script>
     <script src="js/index.js" async defer></script>
   </body>
 </html>

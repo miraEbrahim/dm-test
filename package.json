@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/miraEbrahim/dm-test/issues"
   },
-  "homepage": "https://github.com/miraEbrahim/dm-test#readme"
+  "homepage": "https://github.com/miraEbrahim/dm-test#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }

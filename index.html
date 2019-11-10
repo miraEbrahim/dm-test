@@ -10,11 +10,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/heading.css">
     <!-- Our project just needs Font Awesome Solid + Brands -->
     <link href="css/vendor/fontawesome.css" rel="stylesheet">
-    <link href="css/vendor/brands.css" rel="stylesheet">
-    <link href="css/vendor/solid.css" rel="stylesheet">
+    <link href="css/vendor/all.css" rel="stylesheet">
+    <!-- <link href="css/vendor/regular.css" rel="stylesheet"> -->
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -84,8 +85,7 @@
         <div class="features">
            <!-- 'column' #1 elememet in 'features' block -->
           <div class="features__column">
-            <!-- 'heading' block and 'fa' element of 'heading' block and 'primary' variation in 'heading__fa' block element -->
-            <h2 class="heading heading__fa heading__fa--primary"> fa </h2>
+            <h2 class="fa--primary"> <i class="far fa-4x fa-fw fa-play-circle"></i> </h2>
             <!-- 'heading' block and 'primary' variation in 'heading' block -->
             <h2 class="heading heading--primary">heading primary</h2>
             <!-- 'text' block and 'primary' variation in 'text' block -->
@@ -97,37 +97,35 @@
             </a>
           </div>
            <!-- 'column' #2 elememet in 'features' block -->
-          <div class="features__column">
-            <!-- 'heading' block and 'fa' element of 'heading' block and 'primary' variation in 'heading__fa' block element -->
-            <h2 class="heading heading__fa heading__fa--primary"> fa </h2>
-            <!-- 'heading' block and 'primary' variation in 'heading' block -->
-            <h2 class="heading heading--primary">heading primary</h2>
-            <!-- 'text' block and 'primary' variation in 'text' block -->
-            <p class="text text--primary">primary text</p>
-            <!-- 'link' block and 'and 'primary' variation of 'link' block  -->
-            <a class="link link--primary"> primary link
-                <!-- 'link' block and 'fa' element of 'link' block and 'primary' variation in 'link__fa' block element --> -->
-              <span class="link link__fa link__fa--primary">fa link primary    </span>
-            </a>
-          </div>
-           <!-- 'column' #3 elememet in 'features' block -->
            <div class="features__column">
-              <!-- 'heading' block and 'fa' element of 'heading' block and 'primary' variation in 'heading__fa' block element -->
-              <h2 class="heading heading__fa heading__fa--primary"> fa </h2>
+              <h2 class="fa--primary"> <i class="far fa-4x fa-fw fa-play-circle"></i> </h2>
               <!-- 'heading' block and 'primary' variation in 'heading' block -->
               <h2 class="heading heading--primary">heading primary</h2>
               <!-- 'text' block and 'primary' variation in 'text' block -->
               <p class="text text--primary">primary text</p>
               <!-- 'link' block and 'and 'primary' variation of 'link' block  -->
               <a class="link link--primary"> primary link
-                  <!-- 'link' block and 'fa' element of 'link' block and 'primary' variation in 'link__fa' block element --> -->
-                <span class="link link__fa link__fa--primary">fa link primary    </span>
+                  <!-- 'link' block and 'fa' element of 'link' block and 'primary' variation in 'link__fa' block element -->
+                <span class="link link__fa link__fa--primary">fa link primary</span>
+              </a>
+            </div>
+           <!-- 'column' #3 elememet in 'features' block -->
+           <div class="features__column">
+              <h2 class="fa--primary"> <i class="far fa-4x fa-fw fa-play-circle"></i> </h2>
+              <!-- 'heading' block and 'primary' variation in 'heading' block -->
+              <h2 class="heading heading--primary">heading primary</h2>
+              <!-- 'text' block and 'primary' variation in 'text' block -->
+              <p class="text text--primary">primary text</p>
+              <!-- 'link' block and 'and 'primary' variation of 'link' block  -->
+              <a class="link link--primary"> primary link
+                  <!-- 'link' block and 'fa' element of 'link' block and 'primary' variation in 'link__fa' block element -->
+                <span class="link link__fa link__fa--primary">fa link primary</span>
               </a>
             </div>
         </div><!-- end of features container -->
         <div class="cards">
-          <div class="card__content">
-            <h2 class="heading heading__fa heading__fa--secondary"> cards fa</h2>
+          <div class="card__content background--primary">
+            <h2 class="fa--secondary"> <i class="far fa-calendar"></i></h2>
             <h2 class="heading heading--secondary">cards heading</h2>
             <div>
               <h4 class="heading heading--secondary heading--small">sub cards heading</h4>
@@ -138,14 +136,16 @@
               <span class="link link__fa link__fa--secondary"> link fa</span>
             </a>
           </div>
-          <div class="card__content">
+          <!-- card # 2 -->
+          <div class="card__content card__content--accent">
             <h2 class="heading heading__fa heading__fa--secondary"> cards fa</h2>
             <p class="text text--secondary">cards text</p>
             <a class="link link--secondary">card link          
               <span class="link link__fa link__fa--secondary"> link fa</span>
             </a>
           </div>
-          <div class="card__content">
+          <!-- card #3 -->
+          <div class="card__content background--secondary">
             <div role="img" class="gallery gallery__imgs"  aria-label="a collection of different horses head photos">
               <img class="img-responsive" src="/img/horse-galary-1.png" alt="brown horse's head">
               <img class="img-responsive" src="/img/horse-galary-2.png" alt="blond horse's head">
@@ -154,21 +154,21 @@
               <img class="img-responsive" src="/img/horse-galary-5.png" alt="brown horse's head">
               <img class="img-responsive" src="/img/horse-galary-6.png" alt="blond horse's head"> 
             </div>
-            <div class="gallery gallery__mix">
+            <!-- <div class="gallery gallery__mix">
               <a class="link link--primary">link primary  
                 <span class="link link__fa link__fa--primary">  fa primary</span>
               </a>
               <img class="gallery gallery__img" src="/img/horse-galary-7.png" alt="grayscale horse">
-            </div>
+            </div> -->
           </div>
         </div><!-- end of cards container -->
         <div class="breed">
-          <div role="img" class="breed__logos"  aria-label="a collection of Breed logos">
-              <img class="img--responsive" src="/img/breed/s-logo-bha.png" alt="BHA logo">
-              <img class="img--responsive" src="/img/breed/s-logo-bred.png" alt="the Thoroughbred club logo">
-              <img class="img-responsive" src="/img/breed/s-logo-gbr.png" alt="GBR logo">
-              <img class="img--responsive" src="/img/breed/s-logo-horsemen.png" alt="the horsemen's group logo">
-              <img class="img--responsive" src="/img/breed/s-logo-plus.png" alt="plus+10 logo">
+          <div role="img" aria-label="a collection of Breed logos">
+              <img class="breed__logos" src="/img/breed/s-logo-bha.png" alt="BHA logo">
+              <img class="breed__logos" src="/img/breed/s-logo-bred.png" alt="the Thoroughbred club logo">
+              <img class="breed__logos"src="/img/breed/s-logo-gbr.png" alt="GBR logo">
+              <img class="breed__logos" src="/img/breed/s-logo-horsemen.png" alt="the horsemen's group logo">
+              <img class="breed__logos" src="/img/breed/s-logo-plus.png" alt="plus+10 logo">
             </div>
         </div>
       </main><!-- end of main -->

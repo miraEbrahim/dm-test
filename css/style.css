@@ -36,7 +36,7 @@ body{
 
 .hero{
   display: flex;
-  height: 760px;;
+  height: 25vh;
   width: 100vw;
   background:url("../img/hero-bg.png") no-repeat center; 
   background-size: cover; 
@@ -58,33 +58,33 @@ body{
 .header__navbar{
   font-size: 18px;
   padding-bottom: 10px;
-}
-
-.navbar{
-  list-style-type: none;
-  display: none;
   
 }
 
-.navbar li{
-  text-align: center;
-  margin-top: 10px auto;
+.navbar__list {
+  list-style-type: none;
+  display: none;
 }
 
-.navbar__link {
+.navbar__list li{
+  text-align: center;
+  margin: 15px auto;
+}
+.navbar__link,
+.navbar__logo {
  text-decoration: none;
  color: #23254f;
 }
 
-.header__logo{
-  margin-top: 10px;
-height: 10vh;
+.navbar__logo{
+
+height: 5vh;
 display: inline-block;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
-.navbar-toggle{
+.navbar__toggle{
   position: Absolute ;
   top: 50px;
   right: 20px;
@@ -99,34 +99,45 @@ display: inline-block;
 
 /* desktop layout */
 @media screen and (min-width: 768px) {
-  .header__navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
+  .header__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    margin-top: 0;
+    margin-bottom: 0;
   }
-  .navbar--primary {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
+
+  .navbar__list{
+    display: flex;
+    margin-left: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
   }
-  .navbar--primary li {
-      margin: 0;
+
+  .navbar__list li{
+    margin: 0;
   }
+
+  .navbar__logo{
+    margin: 0;
+    height: 80px;
+
+  }
+
   .navbar__link {
-      margin-left: 10px;
+    margin-left: 40px;
   }
-  .header__logo {
-      margin-top: 0;
-      width: 298px;
-height: 80px;
-  }
- .navbar-toggle {
+  
+ .navbar__toggle {
      display: none;
   }
   
   .navbar__link:hover {
       color: #d9082a;
   }
+  .hero{
+    height: 80vh;
+  }
+}

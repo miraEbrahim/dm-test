@@ -62,23 +62,28 @@ text-transform: capitalize;
   color: #fff;
 }
 
-
-
+.hero__heading{
+  font-size: 14px;
+font-family: "A Garamond Pro”;
+}
 
 .heading--small{}
 
 /* text block */
-.text{}
+.text{
+font-family: "Lato";
+font-weight:300;
+line-height: 15px;
+font-size: 10px;
+}
 
 .text--primary{}
 
-.text--secondary{}
+.text--secondary{
+  color: #fff;
+}
 
-/* link block */
-.link{}
-.link--primary{}
 
-.link-secondary{}
 
 .fa--primary{
   color: #23254f;
@@ -88,3 +93,19 @@ text-transform: capitalize;
   color: #fff;
 }
 
+
+
+/* desktop layout */
+@media screen and (min-width: 768px) {
+.text{
+  font-family: "Lato";
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 18px;
+  }
+
+  .hero__heading{
+    font-size: 30px;
+  font-family: "A Garamond Pro”;
+  }
+}

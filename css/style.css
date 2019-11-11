@@ -88,6 +88,10 @@ body{
   flex-wrap: wrap;
   width: 100vw;
 }
+
+.breed__logos{
+  text-align: center;
+}
 /* flex container  */
 .footer {
   grid-area: footer;

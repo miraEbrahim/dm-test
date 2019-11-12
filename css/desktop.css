@@ -40,12 +40,17 @@
       color: #d9082a;
   }
   .hero{
-    height: 80vh;
+    height: 760px;
+    margin-top:20px;
   }
 
   .hero__content{
     width: 470px;
     height: 290px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right:50px;
+    margin-left: 50px;
   }
 
   
@@ -72,7 +77,6 @@
     flex-direction: row;
     width: 100vw;
     text-align: center;
-   
   }
 
   
@@ -80,5 +84,11 @@
     text-align: center;
     justify-content: space-evenly;
   }
+
+  .gallery-item-link{
+    width: 320px;
+    height: 320px;
+  }
+  
 
 }

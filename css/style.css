@@ -87,10 +87,17 @@ body{
   flex-direction: column;
   flex-wrap: wrap;
   width: 100vw;
+  align-items: center;
 }
 
 .breed__logos{
   text-align: center;
+  width: 100vw;
+  
+}
+
+.logos{
+  width: 50vw;
 }
 /* flex container  */
 .footer {

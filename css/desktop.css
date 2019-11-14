@@ -36,8 +36,8 @@
      display: none;
   }
   
-  .navbar__link:hover {
-      color: #d9082a;
+  .nav-list li{
+    flex-direction: row;
   }
   .hero{
     height: 760px;
@@ -61,12 +61,13 @@
   flex-direction: row;
   flex-wrap: nowrap;
   }
-
+  
 
   .features__column{
    padding: 20px;
     text-align: center;
-    width: 480px;
+    align-content: space-between;
+    /* width: 308px; */
   }
   .card__content{
     width: 480px;
@@ -75,8 +76,9 @@
   }
   .bread{
     flex-direction: row;
-    width: 100vw;
+    /* width: 100vw; */
     text-align: center;
+    
   }
 
   
@@ -85,10 +87,18 @@
     justify-content: space-evenly;
   }
 
-  .gallery-item-link{
-    width: 320px;
-    height: 320px;
-  }
   
 
+  .breed__logos{
+    text-align: center;
+  }
+
+.card-p {
+height: 204px;
+text-align: left;
+padding-right: 20px;
+margin-right: 20px;
+padding-left: 20px;
+margin-left: 20px;
+}
 }

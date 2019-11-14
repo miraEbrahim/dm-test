@@ -5,6 +5,11 @@ body{
   background-color: #fff;
 }
 
+ul{
+  list-style-type: none;
+  /* text-decoration: none; */
+}
+
 /* grid container - parent  */
 .grid{
   display: grid;
@@ -56,12 +61,13 @@ body{
 .cards {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+ 
 }
 
 .features {
   width: 100vw;
   padding-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .features__column,
@@ -92,12 +98,13 @@ body{
 
 .breed__logos{
   text-align: center;
-  width: 100vw;
+  /* width: 100vw; */
   
 }
 
 .logos{
-  width: 50vw;
+  width: 150px;
+  padding: 50px;
 }
 /* flex container  */
 .footer {
@@ -123,6 +130,7 @@ body{
   display: none;
 }
 
+
 .navbar__list li{
   text-align: center;
   margin: 15px auto;
@@ -133,8 +141,11 @@ body{
  color: #23254f;
 }
 
-.navbar__logo{
+.navbar__link:hover {
+  color: #d9082a;
+}
 
+.navbar__logo{
 height: 5vh;
 display: inline-block;
   margin-top: 10px;

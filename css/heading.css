@@ -73,16 +73,23 @@ text-transform: capitalize
 .text{
 font-family: "Lato";
 font-weight:300;
-line-height: 15px;
+
 font-size: 10px;
 }
 
-
+.text__twitter {
+font-size: 18px;
+line-height: 24px;
+font-style: italic;
+}
 .text--secondary{
   color: #fff;
 }
 
-
+.link--secondary{
+font-weight: 300;
+color: #fff;
+}
 
 .fa--primary{
   color: #23254f;
@@ -90,13 +97,24 @@ font-size: 10px;
 
 .fa--secondary{
   color: #fff;
+  padding: 20px;
 }
 
 .fa--social li {
   padding-bottom: 20px;
 }
 
+.link {
+font-size: 16px;
+line-height: 24px;
+font-family: "Lato";
+text-align: right;
+}
 
+.fa__link{
+  font-size: 16px;
+  
+}
 /* desktop layout */
 @media screen and (min-width: 768px) {
 .text{
@@ -104,6 +122,11 @@ font-size: 10px;
   line-height: 24px;
   }
 
+  .text__twitter {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    } 
   .hero__heading{
     font-size: 30px;
   }
@@ -111,5 +134,8 @@ font-size: 10px;
   .fa--social li{
     padding: 5px;
   }
-
+.link  {
+  padding: 20px;
+margin: 20px;
+}
 }

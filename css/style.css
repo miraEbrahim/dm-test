@@ -28,11 +28,14 @@ ul{
   padding:5px 15px ; 
   margin: 5px 15px;
 }
+
+
 .header, .footer{
 display: flex;
 align-items: center;
 justify-content: space-between; 
 }
+
 .footer {
   grid-area: footer;
   background-color: #d2d7db;

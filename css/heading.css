@@ -91,6 +91,10 @@ font-weight: 300;
 color: #fff;
 }
 
+.link--secondary{
+  font-weight: 300;
+  color: #fff;
+  }
 .fa--primary{
   color: #23254f;
 }
@@ -104,11 +108,12 @@ color: #fff;
   padding-bottom: 20px;
 }
 
-.link {
+.link  a{
 font-size: 16px;
 line-height: 24px;
 font-family: "Lato";
 text-align: right;
+text-decoration: none;
 }
 
 .fa__link{
@@ -134,7 +139,7 @@ text-align: right;
   .fa--social li{
     padding: 5px;
   }
-.link  {
+.link {
   padding: 20px;
 margin: 20px;
 }

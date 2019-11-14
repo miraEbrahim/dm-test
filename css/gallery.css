@@ -14,13 +14,17 @@
 height: 160px;
 	object-fit: cover;
   transition: transform 400ms ease-out;
-  /* padding: 0; */
+ 
 }
+
+
 
 .gallery-image:hover {
 	transform: scale(1.15);
 }
 
-/* .gallery-item-link{
-  width: 67vw;
-} */
+.p-right{ 
+  padding-right:50px;
+  margin-right: 50px; 
+  padding-top: 50px;
+}

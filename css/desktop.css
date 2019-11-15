@@ -38,7 +38,7 @@
 
   }
 
-  .navbar__link {
+  .navbar__link, .footer__link {
     margin-left: 40px;
   }
   
@@ -72,10 +72,15 @@
   flex-wrap: nowrap;
   
   }
-  
+  .features{
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
 
   .features__column{
-   padding: 20px;
+  
     text-align: center;
     align-content: space-between;
     /* width: 308px; */
@@ -107,11 +112,16 @@
   }
 
 .card-p {
-height: 204px;
+
 text-align: left;
 padding-right: 20px;
 margin-right: 20px;
 padding-left: 20px;
 margin-left: 20px;
+}
+
+.border{
+  border-left: #d2d7db 1px solid;
+  
 }
 }
